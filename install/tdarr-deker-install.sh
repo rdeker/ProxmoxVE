@@ -29,7 +29,7 @@ fi
 msg_ok "Set Up Hardware Acceleration"
 
 msg_info "Adding tdarr user"
-$STD useradd -t /opt/tdarr tdarr
+$STD useradd -d /opt/tdarr tdarr
 
 msg_info "Installing Tdarr"
 mkdir -p /opt/tdarr
