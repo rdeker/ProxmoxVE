@@ -5,7 +5,7 @@ source <(curl -fsSL https://raw.githubusercontent.com/rdeker/ProxmoxVE/refs/head
 # License: MIT | https://github.com/community-scripts/ProxmoxVE/raw/main/LICENSE
 # Source: https://home.tdarr.io/
 
-APP="Tdarr"
+APP="Tdarr-deker"
 var_tags="${var_tags:-arr}"
 var_cpu="${var_cpu:-2}"
 var_ram="${var_ram:-2048}"
