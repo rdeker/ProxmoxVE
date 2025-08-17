@@ -40,7 +40,8 @@ curl -fsSL "$RELEASE" -o $(basename "$RELEASE")
 $STD unzip Tdarr_Updater.zip
 rm -rf Tdarr_Updater.zip
 chmod +x Tdarr_Updater
-su tdarr ./Tdarr_Updater &>/dev/null
+#$STD su tdarr ./Tdarr_Updater &>/dev/null
+$STD su tdarr ./Tdarr_Updater
 if [[ "$CTTYPE" == "0" ]]; then
   sed -i -e 's/^sgx:x:104:$/render:x:104:root/' -e 's/^render:x:106:root$/sgx:x:106:/' /etc/group
 else
